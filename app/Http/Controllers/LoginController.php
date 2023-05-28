@@ -15,9 +15,4 @@ class LoginController extends Controller
         return view('Login.registrologin');
         
     }
-
-    public function Principal(){
-        return view('Login.principal');
-        
-    }
 }

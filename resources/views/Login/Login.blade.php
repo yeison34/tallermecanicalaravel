@@ -16,7 +16,7 @@
         <br>
         <br>
         <div>
-            <form action="ReguistroLogin.blade.php" method="post">
+            <form action="{{route('Index')}}" method="GET">
                 <label for="Nombre*">Correo</label> <br> <br>
                 <input type="email" id="correo" name="correo" placeholder="example@gmail.com" required/> <br> <br>
                 <label for="Nombre*">Contraseña</label> <br> <br>
