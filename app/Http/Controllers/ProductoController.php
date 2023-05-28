@@ -12,7 +12,7 @@ class ProductoController extends Controller
    }
 
    public function ListadoProductos(){
-        return view("Ventas.ListadoProductos");
+        return view("Producto.ListadoProductos");
    }
 
    public function Producto($id){

@@ -14,11 +14,9 @@ use App\Http\Controllers\VentasController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
+Route::get('/','LoginController@Login');
 Route::get('/Index',[ProductoController::class,'Index'])->name('Index');
 Route::get('/ListadoProductos',[ProductoController::class,'ListadoProductos'])->name('ListadoProductos');
 Route::get('/Producto/{id}',[ProductoController::class,'Producto'])->name('Producto');
@@ -28,4 +26,5 @@ Route::get('/principal','LoginController@Principal');
 
 Route::get('/Index',[ProductoController::class,'Index'])->name('Index');
 Route::get('/ListadoProductos',[ProductoController::class,'ListadoProductos'])->name('ListadoProductos');
+Route::get('/ventas',[VentasController::class,'Ventas'])->name('ventas');
 
