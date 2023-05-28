@@ -18,17 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 Route::get('/Index',[ProductoController::class,'Index'])->name('Index');
 Route::get('/ListadoProductos',[ProductoController::class,'ListadoProductos'])->name('ListadoProductos');
 Route::get('/Producto/{id}',[ProductoController::class,'Producto'])->name('Producto');
-=======
 Route::get('/login','LoginController@Login')->name('login');
 Route::get('/registrologin','LoginController@RegistroLogin')->name('registrarse');
 Route::get('/principal','LoginController@Principal');
->>>>>>> 416f09d (controlador registro)
-=======
+
 Route::get('/Index',[ProductoController::class,'Index'])->name('Index');
 Route::get('/ListadoProductos',[ProductoController::class,'ListadoProductos'])->name('ListadoProductos');
->>>>>>> eee3c71 (cambios nuevos)
+
