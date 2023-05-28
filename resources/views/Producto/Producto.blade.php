@@ -16,7 +16,7 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegacion" style="height=20%">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegacion" style="height:20%">
             <div class="container px-5">
                 <a class="navbar-brand" href="{{route('Index')}}">Heladeria</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -31,47 +31,29 @@
         <!-- Header-->
         
         <!-- Features section-->
-        <section class="py-5 border-bottom cuerpo" id="features" style="height:30%">
-            <div class="container">
-                    <table class="table">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Ver</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Choco Cono</td>
-                    <td>$1500</td>
-                    <td><a href="{{route('Producto',['id'=>1])}}">Cono</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Helados</td>
-                    <td>$2000</td>
-                    <td><a href="{{route('Producto',['id'=>2])}}">Helado</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Paletas</td>
-                    <td>$3000</td>
-                    <td><a href="{{route('Producto',['id'=>3])}}">Paleta</a></td>
-                </tr>
-            </tbody>
-            </table>
-</div>
+        <section class="py-5 border-bottom cuerpo" id="features">
+            <center><h2 class="h4 fw-bolder">{{$arrayDatos[0]}}</h2></center>
+            <div class="d-flex justify-content-center px-5 my-5">
+                
+                        
+                        <div>
+                            <img src="{{asset('imagenes/'.$arrayDatos[3])}}" style="height:300px;width:250px;">
+                        </div>                    
+            </div>
+            <div class="d-flex justify-content-center">
+            <p>Descripcion: {{$arrayDatos[1]}}</p>
+            </div>
+            <div class="d-flex justify-content-center">
+            <p>Precio: {{$arrayDatos[2]}}</p>
+            </div>
         </section>
         
         <!-- Footer-->
-       
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{{asset('js/scripts.js')}}"></script>
+        
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -79,4 +61,3 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
-
